@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+.container {
+    max-width: 1499px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+    .container__section{
+        max-width: 1100px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 16px;
+    }
+img {
+    max-width: 100%;
+}
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+li {
+    list-style: none;
+}
+/* HEADER QISMI  */
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+@keyframes topdan {
+    0% {
+        top: -700px;
+    }
+    100% {
+        top: 0;
+    }
+}
+
+.header {
+    animation: topdan .3s ease;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 70px;
+    transition: background-color 0.3s ease;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.navbar.scrolled {
+    backdrop-filter: blur(15px);
+    background-color: rgba(110, 109, 109, 0.404);
+}
+.navbar__collection {
+    display: flex;
+    gap: 27px;
+    color: #fff;
+}
+.navbar__link {
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+}
+.fa-solid {
+    padding-left: 10px;
+    cursor: pointer;
+}
+.navbar__menu {
+    display: none;
+}
+/* HERO QISMI  */
+.hero {
+    max-height: 1000px;
+    background: linear-gradient(#383638, #0B0B0B)
+}
+.hero__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 184px;
+    padding-top: 172px;
+    padding-bottom: 172px;
+}
+
+.hero__text, .hero__image {
+    width: 100%;
+}
+.hero__text h3 {
+    font-size: 68px;
+    font-weight: 700;
+    line-height: 80.32px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+.hero__text p {
+    font-size: 18px;
+    font-weight: 500;
+    color: #8B8E99;
+    margin-bottom: 47px;
+}
+.hero__input {
+    width: 440px;
+    height: 45px;
+    border-radius: 15px;
+    text-indent: 1.5em;
+}
+.hero__input::placeholder {
+    text-indent: 1.5em;
+}
+.hero__btn {
+    position: absolute;
+    border-radius: 9px;
+    padding: 5px 26px;
+    translate: -115px 6px;
+    border: none;
+    background-color: #3858D6;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+}
+/* BRAND QISMI  */
+.brand__wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 73px;
+    margin-bottom: 135px;
+}
+
+.brand__card {
+    background-color: #F6F6F6;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    width: 30%;
+    cursor: pointer;
+}
+
+.brand__image {
+    margin-right: 20px;
+}
+
+.brand__image img {
+    max-width: 80px; 
+    height: auto;
+}
+
+.brand__text h3 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 9px;
+}
+
+.brand__text p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #8B8E99;
+    line-height: 20px;
+}
+/* WATCHES QISMI */
+.watches__text {
+    text-align: center;
+    margin-bottom: 65px;
+}
+.watches__text h3 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #3858D6;
+}
+.watches__text h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #1E1D1D;
+}
+.watches__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 49px;
+    text-align: center;
+}
+.watches__image {
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    background-color: #F6F6F6; /*o'zgartirish kerak bo'lishi mumkin*/
+    margin-bottom: 11px;
+}
+.watches__card {
+    cursor: pointer;
+}
+.watches__card h3 {
+    color: #1E1D1D;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+.watches__card del {
+    font-size: 20px;
+    font-weight: 500;
+    color: #8B8E99;
+}
+.watches__card strong {
+    font-size: 24px;
+    font-weight: 600;
+    color: #000000;
+}
+.watches__btn {
+    margin-top: 69px;
+    margin-bottom: 135px;
+
+}
+.watches__btn button{
+    padding: 12px 35px;
+    border-radius: 15px;
+    border: none;
+    background-color: #3858D6;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+/* CLIENTS QISMI  */
+.clients__text {
+    text-align: center;
+}
+.clients__text h3 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #3858D6;
+    margin-bottom: 5px;
+}
+.clients__text h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #1E1D1D;
+    margin-bottom: 54px;
+}
+.clients__wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 47px;
+}
+.clients__card {
+    background-color: #F6F6F6;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    width: 50%;
+    margin-bottom: 42px;
+    cursor: pointer;
+}
+.clients__image {
+    margin-right: 28px;
+}
+.clients__card_text h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1E1D1D;
+}
+.clients__card_text p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #8B8E99;
+}
+.dots {
+    text-align: center;
+    margin-bottom: 135px;
+}
+/* NEWS QISMI  */
+.news__wrappper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 74px;
+    background-color: #F6F6F6;
+    border-radius: 22px;
+}
+.news__text h3 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #1E1D1D;
+}
+.news__text p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #8B8E99;
+    margin-bottom: 12px;
+}
+.news__input {
+    width: 370px;
+    height: 40px;
+    border-radius: 15px;
+    border: none;
+    text-indent: 1.5em;
+    position: relative;
+}
+.news__btn {
+    padding: 4px 18px;
+    background-color: #3858D6;
+    border: none;
+    border-radius: 9px;
+    color: #fff;
+    translate: -127px 1px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.news__image {
+    padding-top: 33px;
+    padding-bottom: 33px;
+}
+/* FOOTER QISMI  */
+.footer {
+    background-color: #0B0B0B;
+    margin-top: 91px;
+}
+.footer_info {
+    color: #fff;
+    text-align: center;
+    padding: 23px;
+}
