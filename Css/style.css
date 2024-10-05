@@ -104,7 +104,14 @@ li {
 .fa-solid {
     padding-left: 10px;
     cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
 }
+
+.fa-solid:hover {
+    transform: scale(1.2); 
+    color: #007BFF; 
+}
+
 .navbar__menu {
     display: none;
 }
@@ -157,6 +164,7 @@ li {
     font-size: 18px;
     font-weight: 600;
     color: #fff;
+    cursor: pointer;
 }
 /* BRAND QISMI  */
 .brand__wrapper {
